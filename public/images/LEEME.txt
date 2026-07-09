@@ -1,0 +1,1 @@
+Suelta tus imagenes aqui (png, jpg, webp). Luego en .env refierelas asi: NEXT_PUBLIC_IMG_ROBERTO=/images/roberto.png
