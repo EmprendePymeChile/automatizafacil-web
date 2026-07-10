@@ -80,7 +80,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="lg:hidden w-full bg-midnight/95 backdrop-blur-md border-t border-glass-border">
-          <ul className="container-max flex flex-col gap-1 px-6 py-4">
+          <ul className="w-full flex flex-col gap-2 px-6 pb-8 max-h-[75vh] overflow-y-auto">
             {NAV_ITEMS.map((item) => (
               <li key={item.href}>
                 <a
