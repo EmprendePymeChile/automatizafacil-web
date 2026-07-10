@@ -68,11 +68,11 @@ export default function Roberto() {
                 ))}
               </ul>
 
-              <div className="space-y-3 mb-6">
+              <div className="space-y-4 mb-6">
                 {/* Fila IA */}
-                <div className="flex items-center gap-4">
-                  <span className="text-xs font-semibold text-cyan w-28 shrink-0">IA y automatización</span>
-                  <div className="flex-1 grid grid-cols-3 gap-2">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                  <span className="text-xs font-semibold text-cyan w-full sm:w-28 shrink-0">IA y automatización</span>
+                  <div className="flex-1 grid grid-cols-3 gap-1 sm:gap-2">
                     <div className="glass rounded-card px-3 py-2 text-center">
                       <div className="text-base font-bold text-cyan">{ROBERTO_METRICS.ia.clients}</div>
                       <div className="text-xs text-text-muted">clientes</div>
@@ -89,16 +89,16 @@ export default function Roberto() {
                 </div>
 
                 {/* Fila EmprendePyme general */}
-                <div className="flex items-center gap-4">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
                   <a
                     href={LINKS.emprendepyme}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs font-semibold text-orange w-28 shrink-0 hover:underline"
+                    className="text-xs font-semibold text-orange w-full sm:w-28 shrink-0 hover:underline"
                   >
                     EmprendePyme.cl
                   </a>
-                  <div className="flex-1 grid grid-cols-3 gap-2">
+                  <div className="flex-1 grid grid-cols-3 gap-1 sm:gap-2">
                     <div className="glass rounded-card px-3 py-2 text-center">
                       <div className="text-base font-bold text-text">{ROBERTO_METRICS.emprendepyme.clients}</div>
                       <div className="text-xs text-text-muted">clientes totales</div>

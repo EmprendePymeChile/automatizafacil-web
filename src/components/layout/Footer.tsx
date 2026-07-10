@@ -1,4 +1,4 @@
-import { Zap, Instagram, Facebook, Youtube, MapPin, Star } from 'lucide-react';
+import { Zap, Instagram, Facebook, Youtube, MapPin, Star, Mail } from 'lucide-react';
 import { LINKS, SOCIAL, CONTACT } from '@/lib/constants';
 
 export default function Footer() {
@@ -39,6 +39,12 @@ export default function Footer() {
             <p className="text-xs text-text-muted">
               {CONTACT.direccion || `${CONTACT.ciudad} · ${CONTACT.modo}`}
             </p>
+            <a
+              href={`mailto:${CONTACT.email}`}
+              className="text-xs text-text-muted hover:text-cyan transition-colors"
+            >
+              {CONTACT.email}
+            </a>
           </div>
 
           {/* Internal Links */}

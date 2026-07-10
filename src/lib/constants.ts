@@ -37,6 +37,7 @@ const IMG_HERO = process.env.NEXT_PUBLIC_IMG_HERO || '';
 const CONTACTO_CIUDAD = process.env.NEXT_PUBLIC_CONTACTO_CIUDAD || 'Osorno, Chile';
 const CONTACTO_MODO = process.env.NEXT_PUBLIC_CONTACTO_MODO || 'Atención online';
 const CONTACTO_DIRECCION = process.env.NEXT_PUBLIC_CONTACTO_DIRECCION || '';
+const CONTACTO_EMAIL = process.env.NEXT_PUBLIC_CONTACTO_EMAIL || 'rsaez@emprendepyme.cl';
 
 // ============================================================
 //  Exports
@@ -70,6 +71,7 @@ export const CONTACT = {
   ciudad: CONTACTO_CIUDAD,
   modo: CONTACTO_MODO,
   direccion: CONTACTO_DIRECCION,
+  email: CONTACTO_EMAIL,
 } as const;
 
 export const SOCIAL = {

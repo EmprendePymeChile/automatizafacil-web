@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Send, MessageCircle, MapPin, Globe, Star } from 'lucide-react';
+import { Send, MessageCircle, Mail, MapPin, Globe, Star } from 'lucide-react';
 import { LINKS, CONTACT, SOCIAL } from '@/lib/constants';
 
 const services = [
@@ -145,6 +145,23 @@ Mensaje: ${form.mensaje}`;
                 <div>
                   <p className="text-white font-semibold text-sm">WhatsApp directo</p>
                   <p className="text-xs text-text-muted">Diagnóstico gratuito 15 min</p>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href={`mailto:${CONTACT.email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card rounded-panel block group"
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-card glass-raised flex items-center justify-center group-hover:glow-cyan transition-all">
+                  <Mail className="w-6 h-6 text-cyan" />
+                </div>
+                <div>
+                  <p className="text-white font-semibold text-sm">Correo electrónico</p>
+                  <p className="text-xs text-text-muted">{CONTACT.email}</p>
                 </div>
               </div>
             </a>
