@@ -24,7 +24,7 @@ export default function FloatingWhatsApp() {
       }`}
     >
       <div className="relative">
-        <div className="absolute inset-0 rounded-full bg-greencyan/40 animate-ping" />
+        <div className="hidden sm:block absolute inset-0 rounded-full bg-greencyan/40 animate-ping" />
         <div className="relative w-14 h-14 rounded-full bg-greencyan flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-200">
           <MessageCircle className="w-7 h-7 text-midnight" fill="currentColor" />
         </div>

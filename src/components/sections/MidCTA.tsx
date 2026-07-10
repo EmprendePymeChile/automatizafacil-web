@@ -3,7 +3,7 @@ import { LINKS } from '@/lib/constants';
 
 export default function MidCTA() {
   return (
-    <section className="section-padding">
+    <section className="section-padding overflow-hidden">
       <div className="container-max">
         <div className="relative glass-card rounded-panel p-8 md:p-16 text-center overflow-hidden">
           {/* Background glow */}

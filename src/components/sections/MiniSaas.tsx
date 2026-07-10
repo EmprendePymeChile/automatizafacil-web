@@ -66,8 +66,8 @@ function BrowserMockup({ name, color, image, domain }: { name: string; color: st
 
 export default function MiniSaas() {
   return (
-    <section id="mini-saas" className="section-padding relative">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-cyan/5 rounded-full blur-[150px]" />
+    <section id="mini-saas" className="section-padding relative overflow-hidden">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[600px] h-[400px] bg-cyan/5 rounded-full blur-[150px]" />
       <div className="container-max relative z-10">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="badge mb-4">Mini SaaS</span>
