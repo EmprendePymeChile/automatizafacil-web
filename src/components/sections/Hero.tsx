@@ -10,8 +10,8 @@ export default function Hero() {
       {/* Background effects */}
       <div className="absolute inset-0 grid-bg opacity-40" />
       <div className="absolute inset-0 radial-glow" />
-      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-cyan/10 rounded-full blur-[120px]" />
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-greencyan/10 rounded-full blur-[120px]" />
+      <div className="absolute top-1/4 -left-20 w-64 sm:w-96 h-64 sm:h-96 bg-cyan/10 rounded-full blur-[80px] sm:blur-[120px]" />
+      <div className="absolute bottom-1/4 -right-20 w-64 sm:w-96 h-64 sm:h-96 bg-greencyan/10 rounded-full blur-[80px] sm:blur-[120px]" />
 
       <div className="container-max px-6 md:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
