@@ -22,7 +22,7 @@ export default function Navbar() {
           : 'bg-transparent border-b border-transparent'
       }`}
     >
-      <nav className="container-max flex items-center justify-between px-6 py-4 md:px-12">
+      <nav className="container-max flex items-center justify-between px-4 py-3 md:px-8 md:py-4">
         {/* Logo */}
         <a href="#inicio" className="flex flex-col leading-tight">
           <span className="text-lg font-bold text-white">

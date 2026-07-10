@@ -6,7 +6,7 @@ import { LINKS, IMAGES } from '@/lib/constants';
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+    <section id="inicio" className="relative min-h-[85vh] sm:min-h-screen flex items-start sm:items-center pt-20 pb-12 sm:pt-24 sm:pb-16 overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 grid-bg opacity-40" />
       <div className="absolute inset-0 radial-glow" />
@@ -22,24 +22,23 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="text-center lg:text-left"
           >
-            <span className="badge mb-6">
+            <span className="badge mb-3">
               <span className="w-2 h-2 rounded-full bg-greencyan animate-pulse" />
               IA aplicada para pymes y profesionales
             </span>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-3">
               Automatiza tu negocio con{' '}
               <span className="text-gradient-cyan">inteligencia artificial real</span>
             </h1>
 
-            <p className="text-lg text-text mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-base sm:text-lg text-text mb-5 max-w-[94%] sm:max-w-xl mx-auto lg:mx-0 leading-relaxed">
               Implementamos soluciones de IA en la nube, automatizaciones por API,
-              asistentes especializados, agentes autónomos, sistemas privados en
-              local o VPS y mini SaaS para optimizar atención, ventas, procesos
-              administrativos y toma de decisiones.
+              asistentes especializados, agentes autónomos y mini SaaS para optimizar
+              atención, ventas y procesos administrativos.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6">
+            <div className="flex flex-col gap-2 sm:flex-row sm:gap-4 justify-center lg:justify-start mb-4">
               <a
                 href={LINKS.whatsappDiagnostico}
                 target="_blank"
@@ -55,7 +54,7 @@ export default function Hero() {
               </a>
             </div>
 
-            <p className="text-sm text-text-muted">
+            <p className="text-xs text-text-muted">
               Diagnóstico inicial · IA aplicada · Soluciones para Chile y LATAM
             </p>
           </motion.div>
