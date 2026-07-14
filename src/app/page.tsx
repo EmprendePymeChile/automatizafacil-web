@@ -13,6 +13,7 @@ import MiniSaas from '@/components/sections/MiniSaas';
 import ConversionAssistant from '@/components/sections/ConversionAssistant';
 import Process from '@/components/sections/Process';
 import WaysToAdvance from '@/components/sections/WaysToAdvance';
+import ProcessAnimation from '@/components/sections/ProcessAnimation';
 import Roberto from '@/components/sections/Roberto';
 import Training from '@/components/sections/Training';
 import ToolsSection from '@/components/sections/ToolsSection';
@@ -52,13 +53,24 @@ export default function HomePage() {
         {/* 8. Sección conversión tipo asistente IA */}
         <ConversionAssistant />
 
-        {/* 9. Proceso de trabajo */}
+        {/* 9. Proceso — Ruta Técnica */}
         <Process />
 
-        {/* 10. Formas de avanzar */}
+        {/* Transición */}
+        <div className="text-center py-8 md:py-14">
+          <p className="text-base md:text-xl text-white font-semibold leading-relaxed max-w-2xl mx-auto px-6">
+            Nosotros resolvemos la complejidad técnica.{' '}
+            <span className="text-cyan">Tú avanzas con claridad y acompañamiento.</span>
+          </p>
+        </div>
+
+        {/* 10. Proceso IA animado — Tu Experiencia */}
+        <ProcessAnimation />
+
+        {/* 11. Formas de avanzar */}
         <WaysToAdvance />
 
-        {/* 11. Roberto + EmprendePyme */}
+        {/* 12. Roberto + EmprendePyme */}
         <Roberto />
 
         {/* 12. Capacitación y cursos */}

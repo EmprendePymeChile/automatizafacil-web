@@ -318,15 +318,39 @@ export const TESTIMONIALS = [
   },
   {
     name: 'E-Juridico.cl',
-    role: 'LegalTech',
-    text: 'Excelente servicio de construcción de página web. Le pedí una página web sencilla, versátil y económica para comenzar y lo logró. Además implementamos asistentes IA que colaboran con su staff de abogados en diversas áreas.',
-    result: 'Web + mini SaaS + asistentes IA',
+    role: 'LegalTech / Bufete de abogados',
+    text: 'Excelente servicio de construcción de página web. Le pedí una página web sencilla, versátil y económica para comenzar y lo logró. Además implementamos automatización de WhatsApp, embudos de ventas, asistentes especializados para su bufete de abogados, y agentes IA capaces de atender clientes y coordinar múltiples tareas simultáneamente.',
+    result: 'Web + WhatsApp IA + asistentes + agentes',
   },
   {
     name: 'Palomitas del Sur',
     role: 'Retail / Alimentación',
     text: 'Implementamos un sistema automatizado de venta en línea y presencial en simultáneo, todo interconectado a través de un inventario con códigos de barra, permitiendo tener un excelente control y manejo en tiempo real del negocio.',
     result: 'Sistema POS + inventario integrado',
+  },
+  {
+    name: 'EmprendePyme.cl',
+    role: 'Automatización real probada',
+    text: 'Nuestro propio WhatsApp está automatizado: agenda reuniones, envía notificaciones personalizadas, escucha y procesa audios, y mantiene conversaciones con clientes las 24 horas. Una herramienta que construimos para nosotros y ahora ofrecemos a nuestros clientes. Toca el botón verde de WhatsApp que ves en esta página y compruébalo tú mismo.',
+    result: 'WhatsApp IA: agenda + notificaciones + audios',
+  },
+  {
+    name: 'María G.',
+    role: 'Tienda online',
+    text: 'Automatizamos toda la atención de clientes con un asistente IA en WhatsApp. Ahora los pedidos se confirman solos y nuestros clientes reciben respuesta en segundos, incluso fuera de horario.',
+    result: 'Atención 24/7 automatizada',
+  },
+  {
+    name: 'Carlos R.',
+    role: 'Servicios profesionales',
+    text: 'Necesitaba una web con reservas automáticas. Me construyeron el sitio con un sistema de agendamiento que se sincroniza con mi calendario. Ya no pierdo citas ni tengo que confirmar manualmente.',
+    result: 'Web + reservas inteligentes',
+  },
+  {
+    name: 'Laura M.',
+    role: 'Distribuidora',
+    text: 'Implementamos un sistema que procesa pedidos por WhatsApp y los envía directo a bodega. Pasamos de 2 horas diarias de gestión manual a 15 minutos con todo automatizado.',
+    result: 'Pedidos automatizados',
   },
 ] as const;
 

@@ -1,0 +1,14 @@
+{
+  "name": "AutomatizaFácil.org",
+  "short_name": "AutomatizaFácil",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#040815",
+  "background_color": "#040815",
+  "display": "standalone"
+}

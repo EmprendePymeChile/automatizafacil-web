@@ -2,46 +2,28 @@ import { PROCESS_STEPS } from '@/lib/constants';
 
 export default function Process() {
   return (
-    <section className="section-padding">
+    <section className="section-padding pb-4 md:pb-8">
       <div className="container-max">
-        <div className="text-center mb-16 max-w-2xl mx-auto">
-          <span className="badge mb-4">Proceso</span>
+        <div className="text-center mb-14 max-w-3xl mx-auto">
+          <span className="badge mb-4">RUTA TÉCNICA</span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            De idea a sistema funcionando
+            Cómo construimos la solución
           </h2>
+          <p className="text-text-muted text-sm md:text-base max-w-xl mx-auto">
+            La metodología interna que utilizamos para diseñar, conectar e implementar cada automatización.
+          </p>
         </div>
 
-        <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-cyan/40 via-cyan/20 to-transparent md:-translate-x-px" />
-
-          <div className="space-y-12">
-            {PROCESS_STEPS.map((step, i) => (
-              <div
-                key={step.number}
-                className={`relative flex gap-6 md:gap-12 ${
-                  i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
-              >
-                {/* Node */}
-                <div className="absolute left-8 md:left-1/2 -translate-x-1/2 z-10">
-                  <div className="w-16 h-16 rounded-full glass-raised border-2 border-cyan flex items-center justify-center glow-cyan">
-                    <span className="text-lg font-bold text-cyan">{step.number}</span>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className={`flex-1 pl-24 md:pl-0 ${i % 2 === 0 ? 'md:text-right md:pr-16' : 'md:pl-16'}`}>
-                  <div className="glass-card rounded-panel">
-                    <h3 className="text-xl font-semibold text-white mb-3">{step.title}</h3>
-                    <p className="text-sm text-text-muted leading-relaxed">{step.description}</p>
-                  </div>
-                </div>
-
-                <div className="hidden md:block flex-1" />
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          {PROCESS_STEPS.map((step) => (
+            <div key={step.number} className="glass-card rounded-panel text-center group">
+              <div className="w-14 h-14 rounded-full glass-raised border border-cyan/20 flex items-center justify-center mx-auto mb-4 group-hover:border-cyan/40 transition-colors">
+                <span className="text-lg font-bold text-cyan">{step.number}</span>
               </div>
-            ))}
-          </div>
+              <h3 className="text-base font-semibold text-white mb-2">{step.title}</h3>
+              <p className="text-xs text-text-muted leading-relaxed">{step.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
